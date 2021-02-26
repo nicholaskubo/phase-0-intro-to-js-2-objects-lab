@@ -10,6 +10,7 @@ function updateEmployeeWithKeyAndValue (employee, key, value) {
 }
 newEmployee =  updateEmployeeWithKeyAndValue (employee, "streetAddress", "11 Broadway");
 
+console.log(newEmployee) 
 
 function destructivelyUpdateEmployeeWithKeyAndValue (employee, key, value) {
     employee[key] = value
@@ -25,11 +26,5 @@ function deleteFromEmployeeByKey (employee, key) {
 
 newEmployee2 = deleteFromEmployeeByKey (employee, "name")
 
-function destructivelyDeleteFromEmployeeByKey (employee, key) {
-    employee[key] = undefined
-    return employee
-}
 
-destructivelyDeleteFromEmployeeByKey (employee, "name")
-
-console.log(employee);
+console.log(newEmployee2);
